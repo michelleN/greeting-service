@@ -8,6 +8,10 @@ metadata:
     version: v2
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+        app: greeting-service
+        version: v2
   template:
     metadata:
       labels:
