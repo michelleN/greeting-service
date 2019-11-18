@@ -16,7 +16,7 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, r *http.Request) {
-	greeting := Greeting{"Good Morning", "#ffbf00"}
+	greeting := Greeting{"Good Night", "#00008b"}
 
 	js, err := json.Marshal(greeting)
 	if err != nil {
