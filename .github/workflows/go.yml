@@ -29,4 +29,8 @@ jobs:
     - name: Test
       run: go test -v ./...
     - name: Lint
-      run: golint .
+      run: |
+        export GOPATH=$HOME/go
+        export GOBIN=$(go env GOPATH)/bin
+        export PATH=$PATH:$GOBIN
+        golint .
