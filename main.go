@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// Greeting represents what is returned in the response
 type Greeting struct {
 	Message string
 	Color   string
